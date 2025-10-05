@@ -1,0 +1,3 @@
+#!/bin/sh
+# Minimal mvnw stub (for demonstration only)
+mvn "$@"
