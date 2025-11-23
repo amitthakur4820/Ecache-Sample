@@ -11,6 +11,7 @@ public class UserServiceImpl implements UserService {
     @Cacheable(value = "userCache", key = "#id")
     public String getUserById(Long id) {
         simulateSlowService();
+        Ssystem.out.println("Fetching user with id: " + id);
         return "User_" + id;
     }
 
