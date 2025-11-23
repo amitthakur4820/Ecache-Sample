@@ -23,6 +23,9 @@ public class UserController {
 
     @GetMapping("/test")
     public String getUsers(@PathVariable Long id) {
+
+        SYsstem.out.println("Test endpoint called with id: " + id);
+        SYsstem.out.println("Test endpoint called with id: " + id);
         return userService.getUserById(id);
     }
 }
